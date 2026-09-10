@@ -1,38 +1,44 @@
 # Sales Data Analytics Project
 
-This project analyzes sales data using Python, Exploratory Data Analysis, Data Visualization, and Power BI.
+## 1. Project Overview
 
-## 7. Insights & Recommendations
+This project analyzes real-world online retail transaction data to identify sales trends, top-performing products, major markets, and business opportunities.
 
-### Key Insights
+The project demonstrates a complete data analytics workflow using Python, Exploratory Data Analysis (EDA), data visualization, Power BI, Git, and GitHub.
 
-1. The United Kingdom generated the highest total sales, contributing approximately £7.29 million.
+## 2. Problem Statement
 
-2. November 2011 recorded the highest monthly sales at approximately £1.16 million.
+The objective of this project is to analyze online retail transaction data and answer important business questions such as:
 
-3. October 2011 was another strong sales month, generating approximately £1.04 million.
+- Which products generate the highest sales?
+- Which countries contribute the most revenue?
+- How do sales change over time?
+- What patterns exist between quantity and sales?
+- What recommendations can be made to improve sales planning and business performance?
 
-4. PAPER CRAFT, LITTLE BIRDIE was the top-selling product by total sales, generating approximately £168.47K.
+## 3. Dataset
 
-5. The cleaned dataset generated approximately £8.89 million in total sales from 18,532 orders and 4,338 unique customers.
+The project uses the **UCI Online Retail Dataset**, a real-world transaction dataset containing online retail purchases.
 
-### Recommendations
+### Dataset Details
 
-1. Focus marketing and inventory planning on high-performing products and major markets, particularly the United Kingdom.
+- Original records: 541,909
+- Columns: 8
+- Time period: December 2010 to December 2011
+- Country: Mainly United Kingdom with international transactions
 
-2. Prepare additional inventory and promotional campaigns before the high-demand period from September to November to take advantage of the seasonal increase in sales.
+### Columns
 
-### Conclusion
+- InvoiceNo
+- StockCode
+- Description
+- Quantity
+- InvoiceDate
+- UnitPrice
+- CustomerID
+- Country
 
-The analysis shows strong sales concentration in the United Kingdom and a significant increase in sales toward the end of 2011. Focusing on high-performing products, major markets, and seasonal demand can help improve sales planning and business performance.
-
-## 8. Documentation & Presentation
-
-### Project Overview
-
-This project analyzes online retail sales data to identify sales trends, top-performing products, major markets, and customer-related patterns.
-
-### Tools Used
+## 4. Tools and Technologies
 
 - Python
 - Pandas
@@ -42,55 +48,149 @@ This project analyzes online retail sales data to identify sales trends, top-per
 - Git
 - GitHub
 
-### Dataset
+## 5. Data Cleaning and Preparation
 
-The project uses the UCI Online Retail dataset containing transaction-level online retail data.
+The dataset was cleaned and prepared using Python and Pandas.
 
-### Data Cleaning
+The following steps were performed:
 
-The dataset was cleaned by:
+1. Removed duplicate records.
+2. Removed records with missing product descriptions.
+3. Removed records with missing CustomerID values.
+4. Removed transactions with non-positive quantities.
+5. Removed transactions with non-positive unit prices.
+6. Converted CustomerID to integer format.
+7. Created a new `TotalSales` column.
 
-- Removing duplicate records
-- Removing records with missing product descriptions
-- Removing records with missing CustomerID
-- Removing invalid non-positive quantities
-- Removing invalid non-positive unit prices
-- Converting CustomerID to integer format
-- Creating a TotalSales column using Quantity × UnitPrice
+The TotalSales value was calculated as:
 
-### Exploratory Data Analysis
+`TotalSales = Quantity × UnitPrice`
 
-EDA was performed using descriptive statistics, correlation analysis, monthly sales analysis, country-wise sales analysis, product-wise sales analysis, and outlier analysis.
+### Cleaning Result
 
-### Visualizations
+- Original records: 541,909
+- Final cleaned records: 392,692
+- Duplicate records remaining: 0
+- Missing values in important fields: handled
 
-The project includes:
+## 6. Exploratory Data Analysis
+
+Exploratory Data Analysis was performed to understand the dataset and identify important business patterns.
+
+### Descriptive Statistics
+
+Important results from the cleaned dataset include:
+
+- Total Sales: approximately £8.89 million
+- Total Orders: 18,532
+- Total Customers: 4,338
+- Average Order Value: approximately £479.56
+
+### Correlation Analysis
+
+The correlation analysis showed:
+
+- Quantity vs TotalSales: 0.914
+- Quantity vs UnitPrice: -0.005
+- UnitPrice vs TotalSales: 0.082
+
+The strong positive relationship between Quantity and TotalSales indicates that transaction quantity has a major influence on sales value.
+
+### Sales by Country
+
+The United Kingdom generated the highest sales, with approximately £7.29 million.
+
+Other strong markets included:
+
+- Netherlands
+- EIRE
+- Germany
+- France
+- Australia
+
+### Monthly Sales Analysis
+
+Sales increased significantly toward the end of 2011.
+
+The highest monthly sales were:
+
+- November 2011: approximately £1.16 million
+- October 2011: approximately £1.04 million
+- September 2011: approximately £950.69K
+
+### Outlier Handling
+
+Statistical analysis identified extreme values in Quantity, UnitPrice, and TotalSales.
+
+These values were reviewed rather than automatically removed because some extreme transactions may represent genuine high-volume or high-value purchases.
+
+Invalid non-positive quantities and prices were already removed during data cleaning.
+
+## 7. Data Visualizations
+
+The following visualizations were created using Python and Matplotlib:
 
 1. Top 10 Products by Total Sales
 2. Monthly Sales Trend
 3. Top 10 Countries by Total Sales
-4. Sales by Month
-5. Quantity vs Total Sales
-6. Sales Distribution
+4. Quantity vs Total Sales
+5. Sales Distribution
 
-### Power BI Dashboard
+These visualizations were used to identify sales trends, product performance, market performance, relationships, and transaction distributions.
 
-An interactive Power BI dashboard was created with:
+## 8. Power BI Dashboard
 
-- Total Sales KPI
-- Total Orders KPI
-- Total Customers KPI
+An interactive Power BI dashboard was created to present the key business metrics and trends.
+
+### KPI Cards
+
+- Total Sales: £8.89M
+- Total Orders: 18.53K
+- Total Customers: 4.34K
+
+### Power BI Visuals
+
+The dashboard includes:
+
 - Monthly Sales Trend
 - Top 10 Products by Total Sales
 - Top 10 Countries by Total Sales
 - Sales by Month
+
+### Filters
+
+The dashboard includes:
+
 - Country Filter
 - Year Filter
 
-### Insights and Recommendations
+The dashboard provides an interactive way to explore sales performance and business trends.
 
-The key findings and recommendations are documented in the Insights & Recommendations section.
+## 9. Insights and Recommendations
 
-### Conclusion
+### Key Insights
 
-The project demonstrates how Python, data visualization, and Power BI can be used together to clean, analyze, visualize, and communicate business data effectively.
+1. The United Kingdom generated the highest total sales, contributing approximately £7.29 million.
+2. November 2011 recorded the highest monthly sales at approximately £1.16 million.
+3. October 2011 was another strong sales month, generating approximately £1.04 million.
+4. PAPER CRAFT, LITTLE BIRDIE was the top-selling product by total sales, generating approximately £168.47K.
+5. The cleaned dataset generated approximately £8.89 million in total sales from 18,532 orders and 4,338 unique customers.
+
+### Recommendations
+
+1. Focus marketing and inventory planning on high-performing products and major markets, particularly the United Kingdom.
+2. Prepare additional inventory and promotional campaigns before the high-demand period from September to November to take advantage of the seasonal increase in sales.
+
+## 10. Conclusion
+
+The analysis demonstrates how Python, Exploratory Data Analysis, data visualization, and Power BI can be combined to transform raw retail transaction data into meaningful business insights.
+
+The results show strong sales concentration in the United Kingdom, high performance from selected products, and a significant increase in sales toward the end of 2011.
+
+These insights can support better inventory planning, marketing decisions, and sales forecasting.
+
+## Project Files
+
+- `Online Retail.xlsx` — Original dataset
+- `Sales_Data_Analytics.ipynb` — Python analysis and EDA notebook
+- `README.md` — Project documentation
