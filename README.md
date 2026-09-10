@@ -180,8 +180,11 @@ The dashboard includes:
 
 ### Live Power BI Dashboard
 
-[View the Interactive Power BI Dashboard]([YOUR_POWER_BI_LINK_HERE](https://app.powerbi.com/groups/65ccc28f-0131-49cb-8b8b-34510d346ca1/reports/612084f3-4577-4ac2-8e6b-c49b9116177b?ctid=4ce8fa72-23e2-4b0c-b5e0-847fff441edd&pbi_source=linkShare&bookmarkGuid=4ca54f1d-bdf8-4b91-be6f-df8995815d7d))
+[View the Interactive Power BI Dashboard](https://app.powerbi.com/groups/65ccc28f-0131-49cb-8b8b-34510d346ca1/reports/612084f3-4577-4ac2-8e6b-c49b9116177b?ctid=4ce8fa72-23e2-4b0c-b5e0-847fff441edd&pbi_source=linkShare&bookmarkGuid=ab6968ef-41e8-4677-bc2a-af3210a7e3ca)
 
+### Dashboard Preview
+
+![Power BI Dashboard](powerbi_dashboard.png)
 The dashboard provides an interactive way to explore sales performance and business trends.
 
 ## 9. Insights and Recommendations
