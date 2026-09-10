@@ -130,11 +130,25 @@ Invalid non-positive quantities and prices were already removed during data clea
 
 The following visualizations were created using Python and Matplotlib:
 
-1. Top 10 Products by Total Sales
-2. Monthly Sales Trend
-3. Top 10 Countries by Total Sales
-4. Quantity vs Total Sales
-5. Sales Distribution
+### Top 10 Products by Total Sales
+
+![Top 10 Products](top_10_products.png)
+
+### Monthly Sales Trend
+
+![Monthly Sales Trend](monthly_sales_trend.png)
+
+### Top 10 Countries by Total Sales
+
+![Top 10 Countries](top_10_countries.png)
+
+### Quantity vs Total Sales
+
+![Quantity vs Total Sales](quantity_vs_sales.png)
+
+### Sales Distribution
+
+![Sales Distribution](sales_distribution.png)
 
 These visualizations were used to identify sales trends, product performance, market performance, relationships, and transaction distributions.
 
