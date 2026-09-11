@@ -214,4 +214,12 @@ These insights can support better inventory planning, marketing decisions, and s
 
 - `Online Retail.xlsx` — Original dataset
 - `Sales_Data_Analytics.ipynb` — Python analysis and EDA notebook
+- `Sales_Data_Analytics.pbix` — Power BI dashboard
 - `README.md` — Project documentation
+- `project_notes.text` — Project notes
+- `powerbi_dashboard.png` — Power BI dashboard screenshot
+- `top_10_products.png` — Top 10 products visualization
+- `top_10_countries.png` — Top 10 countries visualization
+- `monthly_sales_trend.png` — Monthly sales trend visualization
+- `quantity_vs_sales.png` — Quantity vs sales visualization
+- `sales_distribution.png` — Sales distribution visualization
