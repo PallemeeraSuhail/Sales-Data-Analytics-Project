@@ -223,3 +223,4 @@ These insights can support better inventory planning, marketing decisions, and s
 - `monthly_sales_trend.png` — Monthly sales trend visualization
 - `quantity_vs_sales.png` — Quantity vs sales visualization
 - `sales_distribution.png` — Sales distribution visualization
+- `Sales_Data_Analytics_Stylish_Presentation.pptx` — Final project presentation
